@@ -1,18 +1,17 @@
 # IT-Service-Desk-Automation-Analysis
-#### End-to-end data analytics project using Python, PostgreSQL and Power BI to identify automation opportunities within an IT Service Desk and estimate the operational impact of self-service and chatbot adoption.
-
+*End-to-end analytics project using Python, PostgreSQL, and Power BI to identify automation opportunities, quantify operational impact, and recommend strategies to reduce Service Desk workload.*
 ## Executive Summary
+The IT Service Desk supports hundreds of retail stores, but a large volume of tickets are repetitive, low-complexity requests such as password resets, access issues, and hardware faults, reducing analyst capacity for higher-value technical work.
 
-The IT Service Desk supports hundreds of retail stores by resolving technical issues such as password resets, printer faults, software access requests, and hardware incidents.
+This project analysed **41,927 service desk tickets** using **Python, PostgreSQL, and Power BI** to identify automation opportunities, measure avoidable workload, and quantify the operational impact of self-service improvements.
 
-Analysis of 41,927 historical service desk tickets revealed that a significant proportion of requests were repetitive, low-complexity issues that followed standard resolution procedures. These requests consumed thousands of analyst hours each year, reducing the team's ability to focus on higher-value technical work.
+The analysis found that **65.8% of tickets (~27,600)** were potentially avoidable, consuming **4,759 analyst hours** over two years — equivalent to approximately **1.4 FTE**. Recommendations include deploying self-service password reset, improving Knowledge Base adoption, and automating the highest-volume request categories, with potential to reduce ticket demand by **~15%** and recover analyst capacity for complex incidents.
 
-This project combines Python, PostgreSQL, and Power BI to identify automation opportunities and provide leadership with data-driven recommendations for reducing Service Desk workload.
+<img width="4150" height="2400" alt="AdobeExpressPhotos_2c1e46f938f141298d70f22d6c40ec33_CopyEdited" src="https://github.com/user-attachments/assets/7aa3d023-d5d3-46bc-aa72-7f26310e08f0" />
+
 
 ## Business Problem
-
 #### - How can the IT Service Desk reduce repetitive work while maintaining service quality?
-
 The Service Desk receives thousands of support requests every year from retail stores across the business. While many incidents require technical expertise, a large proportion involve routine tasks such as password resets, account unlocks, printer issues, and software access requests.
 
 Although these requests are relatively simple to resolve, they consume a significant amount of analyst time, limiting the team's ability to focus on complex incidents and reducing overall operational efficiency.
