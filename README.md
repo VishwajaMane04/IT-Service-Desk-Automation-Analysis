@@ -46,12 +46,12 @@ Production Service Desk data can't be shared publicly, so I generated a syntheti
 
 ### 2. Data Preparation & EDA
 Cleaned and profiled in pandas before loading — done here, not in Power BI, so the logic is transparent and reproducible. Collapsed ~69 subcategory variants to ~43, parsed mixed-format dates, converted handling times to numeric minutes, removed duplicates, and imputed missing handling time from subcategory medians. Reduced 44,250 raw records to 41,927 analysis-ready rows.
-📁[Cleaning & EDA](01_python_Data_cleaning_eda/IT_Service_Desk_Data_Cleaning_and_EDA.ipynb)
+📁 [Cleaning & EDA](01_python_Data_cleaning_eda/IT_Service_Desk_Data_Cleaning_and_EDA.ipynb)
 
 ### 3. Data Analysis
 Loaded via SQLAlchemy and indexed for performance. Each business question answered with dedicated queries using aggregation and window functions: call drivers, repetitive workload, hours lost and FTE cost, store ranking, KB coverage, seasonality, and automation opportunity.
-📁[Data Analysis](02_sql_analysis/Data_Analysis_SQL.sql)
+📁 [Data Analysis](02_sql_analysis/Data_Analysis_SQL.sql)
 
 ### 4. Data Modelling & Visualisation
 Connected directly to PostgreSQL. Created a date dimension to support correct time-based aggregation and chronological sorting. All KPIs were built as DAX measures (held in a dedicated measures table) so metrics calculate consistently across the report. The result is a single executive page: a KPI strip over six visuals, each answering one business question and paired with a one-line interpretive caption stating the finding. 
-📁 [Report](https://03_powerbi_dashboard/Service desk data analysis dashboard.pdf)
+📁 [Report](03_powerbi_dashboard/Service desk data analysis dashboard.pbix)
