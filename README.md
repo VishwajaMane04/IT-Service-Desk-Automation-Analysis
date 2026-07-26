@@ -53,3 +53,27 @@ Loaded via SQLAlchemy and indexed for performance. Each business question answer
 ### 4. Data Modelling & Visualisation
 Connected directly to PostgreSQL. Created a date dimension to support correct time-based aggregation and chronological sorting. All KPIs were built as DAX measures (held in a dedicated measures table) so metrics calculate consistently across the report. The result is a single executive page: a KPI strip over six visuals, each answering one business question and paired with a one-line interpretive caption stating the finding 
 📊 [View the full dashboard (PDF)](03_powerbi_dashboard/service_desk_dashboard.pdf)
+
+## 📌 Key Findings
+
+**1. Two-thirds of all tickets never needed an analyst.** Evidence: 65.8% of 41,927 tickets (~27,600) were avoidable; only 34.2% genuinely required analyst skill. Impact: The team is spending the majority of its capacity on work a portal could absorb.
+
+**2. Repetitive work consumes ~1.4 full-time analysts.**
+Avoidable tickets accounted for 4,759 handling hours over two years, the equivalent of 1.4 full-time analysts tied up on low-complexity requests instead of technical issues.
+
+**3. The problem is adoption, not documentation.**
+88% of avoidable tickets already had a Knowledge Base article — yet were still logged with the service desk. The gap is behavioural: stores aren't using existing self-help, not lacking it.
+
+**4. A handful of stores drive disproportionate volume.**
+The top ticket-logging stores generated several times the volume of the average site, concentrating avoidable demand and marking clear targets for self-service training.
+
+**5. Demand is highly seasonal.**
+Ticket volume peaks every November–December, driven by peak retail trading, with a secondary January rise — meaning automation and staffing should flex to match predictable seasonal load.
+
+
+## Recommendations
+1. **Deploy a self-service password reset flow.** Targets the top ~6,400 tickets. Expected: ~15% total ticket reduction and the fastest payback of any single action.
+2. **Launch a deflection chatbot surfacing existing KB articles.** Closes the 88% adoption gap. Expected: capture a meaningful share of the 27,600 avoidable tickets with near-zero content cost.
+3. **Automate the top 6 call drivers first.** Expected: recover a large portion of the 4,759 lost hours ≈ ~0.3 FTE, redirected to complex work.
+4. **Go live before November.** Expected: absorb the Nov–Dec peak and protect SLAs during highest-risk trading weeks.
+5. **Target high-volume stores** (Kendal, Carlisle, Ipswich) for rollout. Expected: concentrate early wins where ticket volume — and ROI — is greatest.
