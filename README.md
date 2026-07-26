@@ -52,4 +52,4 @@ Loaded via SQLAlchemy and indexed for performance. Each business question answer
 
 ### 4. Data Modelling & Visualisation
 Connected directly to PostgreSQL. Created a date dimension to support correct time-based aggregation and chronological sorting. All KPIs were built as DAX measures (held in a dedicated measures table) so metrics calculate consistently across the report. The result is a single executive page: a KPI strip over six visuals, each answering one business question and paired with a one-line interpretive caption stating the finding 
-[Report](03_powerbi_dashboard/Service desk data analysis dashboard.pdf)
+[View dashboard](03_powerbi_dashboard/Service desk data analysis dashboard.pdf)
