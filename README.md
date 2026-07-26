@@ -62,10 +62,10 @@ Connected directly to PostgreSQL. Created a date dimension to support correct ti
 Avoidable tickets accounted for 4,759 handling hours over two years, the equivalent of 1.4 full-time analysts tied up on low-complexity requests instead of technical issues.
 
 **3. The problem is adoption, not documentation.**
-88% of avoidable tickets already had a Knowledge Base article — yet were still logged with the service desk. The gap is behavioural: stores aren't using existing self-help, not lacking it.
+88% of avoidable tickets already had a Knowledge Base article, yet were still logged with the service desk. The gap is behavioural: stores aren't using existing self-help, not lacking it.
 
-**4. A handful of stores drive disproportionate volume.**
-The top ticket-logging stores generated several times the volume of the average site, concentrating avoidable demand and marking clear targets for self-service training.
+ **4. The recoverable prize is ~£38.7K per year.**
+Evidence: The 4,759 avoidable handling hours (~1.4 FTE) equate to ~£38.7K in estimated annual analyst cost — based on ~2,380 avoidable hours per year at a ~£16 blended analyst cost per hour.
 
 **5. Demand is highly seasonal.**
 Ticket volume peaks every November–December, driven by peak retail trading, with a secondary January rise — meaning automation and staffing should flex to match predictable seasonal load.
@@ -74,6 +74,13 @@ Ticket volume peaks every November–December, driven by peak retail trading, wi
 ## Recommendations
 1. **Deploy a self-service password reset flow.** Targets the top ~6,400 tickets. Expected: ~15% total ticket reduction and the fastest payback of any single action.
 2. **Launch a deflection chatbot surfacing existing KB articles.** Closes the 88% adoption gap. Expected: capture a meaningful share of the 27,600 avoidable tickets with near-zero content cost.
-3. **Automate the top 6 call drivers first.** Expected: recover a large portion of the 4,759 lost hours ≈ ~0.3 FTE, redirected to complex work.
+3. **Automate the top 6 call drivers first.** Expected: recover a large portion of the 4,759 lost hours, redirected to complex work.
 4. **Go live before November.** Expected: absorb the Nov–Dec peak and protect SLAs during highest-risk trading weeks.
-5. **Target high-volume stores** (Kendal, Carlisle, Ipswich) for rollout. Expected: concentrate early wins where ticket volume — and ROI — is greatest.
+5. **Target high-volume stores** (Kendal, Carlisle, Ipswich) for rollout. Expected: concentrate early wins where ticket volume and ROI is greatest.
+
+
+## Limitations & Assumptions
+- Handling time is estimated (5–10 min/ticket), not system-measured actual time-on-ticket would sharpen the hours figure.
+- Avoidable ≠ automatable at 100%. edge cases (locked accounts, security exceptions) will still need analysts, so deflection rates should be treated as a ceiling.
+- The data shows that KB articles exist, not why they go unused. 88% of avoidable tickets already have a KB article, yet users still raise them but the dataset can't reveal the cause (hard to find, unclear steps,          faster to phone the desk, or simple unawareness). Closing this adoption gap needs qualitative input, user surveys or portal search logs, which sit outside this dataset.
+
